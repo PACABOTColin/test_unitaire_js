@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="fr-FR">
+    <head>
+        <title>Casques Nolark : Simulateur de calcul pour la force de vente !</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="José GIL" />
+        <meta name="description" content="Découvrez des casques moto dépassant même les exigences des tests de sécurité. Tous les casques Nolark au meilleur prix et avec en prime la livraison gratuite !" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <script src="../js/remuneration_chauffeurs.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="route.html">Route</a></li>
+                    <li><a href="cross.html">Cross</a></li>
+                    <li><a href="piste.html">Piste</a></li>
+                    <li><a href="enfants.html">Enfants</a></li>
+                    <li><a href="nous-contacter.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="vide"></div>
+        <section id="formulaire">
+            <h1>Simulateur de calcul pour la remunération d'un chauffeur :</h1>
+            <form id="form_simulateur" name="form_simulateur">
+                <fieldset id="resultats">
+                    <legend>Vos résultats : </legend>
+                    <p><label for="num_ancien">Nombre d'années d'ancienneté :</label> <input type="number" name="num_ancien" id="num_ancien" min="0" max="70" value="0" /></p>
+                    <p><label for="num_km">Distance parcourue :</label> <input type="number" name="num_km" id="num_km" min="0" value="0" /></p>
+                    <p><label for="num_accidents">Nombre d'accidents :</label> <input type="range" name="num_accidents" id="num_accidents" min="0" max="5" value="0" /> <output id="affAccident">0</output></p>
+                    <h2 id="remuneration"></h2>
+                    <iframe id="videoSensibilisation" src="//www.dailymotion.com/embed/video/x2nfo4s" style="display: none;">video de sensibilisation a la securité routière</iframe>
+                </fieldset>
+                <input type="reset" name="rst_annuler" id="btn_annuler" value="Effacer les données" /></p>
+            </form>
+        </section>
+        <div class="vide"></div>
+        <footer><p>&copy;2017 Nolark - Créé par <a href="mailto:jgil@ac-nice.fr">José GIL</a><p></footer>
+    </body>
+</html>
